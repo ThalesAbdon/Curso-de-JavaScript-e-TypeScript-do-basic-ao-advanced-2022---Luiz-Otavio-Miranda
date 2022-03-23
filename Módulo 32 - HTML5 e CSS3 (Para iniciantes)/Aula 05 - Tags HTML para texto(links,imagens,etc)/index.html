@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .img-in-text {
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+
+    <style>
+      h1 {
+        background: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="background: rgb(19, 95, 95)">Cabeçalho</h1>
+    <h1>Cabeçalho</h1>
+    <p>
+      <b>Lorem ipsum</b> dolor sit amet consectetur <strong> elit </strong>.
+      <i>Odio</i> eum ab sit voluptas iure <em>consectetur nobis</em> rem dicta
+      molestias blanditiis, similique, tenetur totam
+      <a href="https://www.google.com" target="_blank"> google </a> consequuntur
+      eaque labore id. Iste, ex debitis.
+
+      <img
+        class="img-in-text"
+        src="https://i.pinimg.com/originals/8b/52/4e/8b524e8c28d9c52ba74100a36fe65cf5.jpg"
+        alt="Bender de futurama!"
+      />
+    </p>
+
+    <p>
+      Lorem <u>dolor sit amet</u> consectetur H<sub>2</sub>O elit. Itaque, 2<sup
+        >3</sup
+      >
+      saepe aliquid dolores similique, quis, exercitationem quae minima ut<br />
+      <q>eveniet</q> sunt a natus numquam obcaecati accusamus impedit qui
+      temporibus? Autem!
+    </p>
+    <pre>
+        <code>
+            void Update()
+            {
+                float eixoX = Input.GetAxisRaw("Horizontal");
+                  
+                  if(eixoX > 0 && isLookLeft == true){
+                      Flip();
+                  }else if(eixoX < 0 && isLookLeft == false){
+                      Flip();
+                  }
+        
+        
+                float speedY = playerRb.velocity.y;
+        
+                 if(Input.GetButtonDown("Jump") && isGrounded == true){
+                     playerRb.AddForce(new Vector2(0,jumpForce));
+                 }
+                
+                 if(Input.GetButtonDown("Fire1")){
+                     playerAnimator.SetTrigger("attack");
+                 }
+        
+                playerRb.velocity = new Vector2(eixoX * speed, speedY);
+        
+        
+                playerAnimator.SetInteger("movX", (int)eixoX);
+                playerAnimator.SetBool("isGrounded",isGrounded);
+                playerAnimator.SetFloat("speedY",speedY); 
+            }
+        </code>
+      
+     
+
+   </pre>
+   <div>
+       EU SOU UM BLOCO
+   </div>
+
+  </body>
+</html>
