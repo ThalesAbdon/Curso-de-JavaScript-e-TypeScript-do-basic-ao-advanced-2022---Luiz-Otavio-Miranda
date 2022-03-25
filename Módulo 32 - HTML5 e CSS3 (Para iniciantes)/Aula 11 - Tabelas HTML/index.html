@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas HTML</title>
+     
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+        table td, table th{
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+        table{
+            border-collapse: collapse;
+            width: 900%;
+        }
+        table caption{
+           caption-side: bottom;
+           text-align: center;
+           font-style: oblique;
+           font-size: 16px;
+        }
+        table tfoot{
+            background-color: aqua;
+            font-style: oblique;
+            font-size: 20px;
+        }
+        .responsive-table{
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <p> Apenas testando tabelas! </p>
+
+<div class = 'responsive-table'>
+    <table>
+            <caption> Treinando tabelas em HTML </caption>
+        <thead>
+            <tr>
+                <th>
+                    Título 1
+                </th>
+                <th>
+                    Título 2
+                </th>
+                <th>
+                    Título 3
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CORPO 1</td>
+                <td>CORPO 2</td>
+                <td>CORPO 3</td>
+            </tr>
+            <tr>
+                <td>CORPO 1</td>
+                <td>CORPO 2</td>
+                <td>CORPO 3</td>
+            </tr>
+            <tr>
+                
+                <td colspan="2" rowspan="2">Ocupando 3 colunas</td>
+                
+            </tr>
+            <tr>
+              
+                <td>CORPO 3</td>
+            </tr>
+            <tr>
+                <td>CORPO 1</td>
+                <td>CORPO 2</td>
+                <td>CORPO 3</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" rowspan="2"></td>
+                <td rowspan="">TOTAL:</td>
+            </tr>
+            <tr>
+                <td>620,17</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>
