@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.pai h1+p{
+    color:darkcyan
+}
+
+.pai2{
+    font-size: 28px;
+}
+.pai2 .um~.dois{
+ color: cornflowerblue;
+}
+
+/*se começar com isso*/
+[meu-atributo^="st"]{
+    color: coral;
+}
+/*contem*/
+[meu-atributo*="aaaaa"]{
+    color: coral;
+}
+
