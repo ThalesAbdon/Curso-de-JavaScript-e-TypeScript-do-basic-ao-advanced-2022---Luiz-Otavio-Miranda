@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.pai h1+p{
+    color:darkcyan
+}
+
+.pai2{
+    font-size: 28px;
+}
+.pai2 .um~.dois{
+ color: cornflowerblue;
+}
+
+[checked]{
+    width: 100px;
+    height: 100px;
+    color: rebeccapurple
+}
+
