@@ -1,0 +1,47 @@
+.heading:hover {
+    background-color: crimson;
+}
+
+.pai:hover{
+    transition: all 2s ease-in-out;
+    background-color: cornflowerblue;
+}
+
+
+
+a:link{
+    color:deeppink
+}
+
+a:visited{
+    color:blue
+}
+
+a:hover{
+    background: darkslateblue;
+    color: white;
+    text-decoration: none;  
+}
+
+a:active{
+    background: goldenrod;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus{
+    box-shadow:  0 0 5px rgba(0,0,0,0.5);
+    outline: none;
+    border: 5px solid black;
+}
+input:checked + .p-start{
+    background-color: darkcyan;
+}
+
+.p-start{
+    font-size: 62px;
+}
+
+input:required{
+    background: rgb(62, 17, 105);
+}
