@@ -1,0 +1,13 @@
+ul li::after{
+    content: ' - ';
+    color: darkcyan;
+}
+
+p::first-letter{
+    color: coral;
+    font-size: 80px;
+}
+
+p::first-line{
+    background-color: darkslateblue;
+}
