@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    padding: 15px;
+}
+.grid::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+.grid .col{
+    width: 33.33%;
+    height: 300px;
+    float: left;
+}
+
+.grid .col-content{
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    background-color: red;
+    padding: 15px;
+}
