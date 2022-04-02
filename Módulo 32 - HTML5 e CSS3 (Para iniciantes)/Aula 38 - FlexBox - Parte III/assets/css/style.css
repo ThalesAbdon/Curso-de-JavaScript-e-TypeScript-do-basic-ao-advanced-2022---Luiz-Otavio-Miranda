@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: yellow;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    height: 800px;
+}
+
+.flex-item{
+    flex-grow: 1;
+      width: 100%;
+    background-color: aqua;
+    
+    
+}
+.flex-item:nth-child(3){
+    align-self: flex-end;
+}
