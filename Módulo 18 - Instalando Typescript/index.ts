@@ -1,5 +1,5 @@
 function greet(nome: string){
-    return `Eu trabalho na ${nome}`;
+    return `Eu trabalho naaaa ${nome}`;
 }
 
 console.log(greet('Voltz'));
