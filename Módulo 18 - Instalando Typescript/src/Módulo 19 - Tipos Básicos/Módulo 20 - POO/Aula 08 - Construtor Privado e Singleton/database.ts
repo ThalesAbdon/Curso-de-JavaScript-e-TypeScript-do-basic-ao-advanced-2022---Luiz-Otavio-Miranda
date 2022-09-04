@@ -10,6 +10,7 @@ export class Database {
   connect(): void {
     console.log(`Conectado: ${this.host}, ${this.user}, ${this.password}`);
   }
+  //Metódo que cria um novo objeto
   static getDatabase(host: string, user: string, password: string): Database {
     if (Database.database) {
       console.log('Retornando instância já criada!');
