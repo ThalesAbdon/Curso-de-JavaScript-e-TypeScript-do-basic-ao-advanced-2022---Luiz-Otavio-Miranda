@@ -2,13 +2,17 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/Módulo 19 - Tipos Básicos/Aula 18 - webPack/index.ts',
+  entry: './src/Módulo 19 - Tipos Básicos/Aula 19 - Exercicioatividade.ts',
+
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        loader: 'ts-loader',
         exclude: /node_modules/,
+        options: {
+          configFile: 'tsconfigFrontend.json',
+        },
       },
     ],
   },
@@ -17,7 +21,7 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist', 'assets', 'js'),
+    path: path.resolve(__dirname, 'frontend', 'assets', 'js'),
   },
   devtool: 'source-map',
 };

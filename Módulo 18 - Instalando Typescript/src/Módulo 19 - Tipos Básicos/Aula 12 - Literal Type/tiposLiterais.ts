@@ -1,5 +1,6 @@
 let x = 10; //eslint-disable-line
 x = 0b100;
+console.log(x);
 const y = 10;
 let a = 100 as const; //eslint-disable-line
 console.log(a);
