@@ -1,5 +1,3 @@
-import { type } from 'os';
-
 export function somarOuConcatenar(a: unknown, b: unknown): number | string {
   return typeof a === 'number' && typeof b === 'number' ? a + b : `${a}${b}`;
 }
