@@ -1,0 +1,55 @@
+*{
+    background-color: rgb(21, 68, 68);
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+
+.timer{
+    display: block;
+    position: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: 250px;
+    margin-bottom:300px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+h1{
+    background-color: white;
+    margin-right: 100px;
+    font-size: 30px;
+}
+
+h2{
+    background-color: white;
+    margin-right: 100px;
+    font-size: 60px;
+}
+.timer .buttons{
+    background-color: white;
+}
+
+.timer .buttons .start{
+background-color: silver
+}
+
+.timer .buttons .pause{
+    background-color: silver
+}
+
+.timer .buttons .reset{
+    background-color: silver
+}
+
+.paused{
+    color: red;
+}
