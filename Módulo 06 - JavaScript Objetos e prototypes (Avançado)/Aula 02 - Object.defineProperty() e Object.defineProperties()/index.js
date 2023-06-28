@@ -3,7 +3,7 @@ function Produto(name, price, stock) {
     name: { enumerable: true, value: name, writable: true, configurable: true },
     price: {
       enumerable: true,
-      value: name,
+      value: price,
       writable: true,
       configurable: true,
     },
