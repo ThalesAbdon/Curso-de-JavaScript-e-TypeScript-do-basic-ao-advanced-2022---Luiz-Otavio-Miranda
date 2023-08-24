@@ -54,8 +54,8 @@ app.use(csrfMiddleware);
 app.use(routes);
 
 app.on("pronto", () => {
-  app.listen(3007, () => {
-    console.log("Acessar http://localhost:3007");
-    console.log("Servidor executando na porta 3007");
+  app.listen(3006, () => {
+    console.log("Acessar http://localhost:3006");
+    console.log("Servidor executando na porta 3006");
   });
 });
