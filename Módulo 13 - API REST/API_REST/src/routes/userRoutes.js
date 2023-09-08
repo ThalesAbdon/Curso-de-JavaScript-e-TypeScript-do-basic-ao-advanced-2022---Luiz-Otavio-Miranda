@@ -3,11 +3,14 @@ import userController from '../controllers/UserController';
 import loginRequired from '../middlewares/loginRequired';
 
 const router = new Router();
-router.post('/', userController.create);
+
+// Não deveria exister em um sistema real!
 router.get('/', loginRequired, userController.index);
 router.get('/:id', userController.show);
-router.put('/', userController.update);
-router.delete('/', userController.delete);
+
+router.post('/', userController.create);
+router.put('/', loginRequired, userController.update);
+router.delete('/', loginRequired, userController.delete);
 export default router;
 
 /*
