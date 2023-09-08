@@ -1,5 +1,4 @@
 import Sequelize, { Model } from 'sequelize';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import bcryptjs from 'bcryptjs';
 
 export default class User extends Model {
